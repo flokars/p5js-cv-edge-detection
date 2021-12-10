@@ -34,6 +34,7 @@ function setup() {
     buffer = new jsfeat.matrix_t(w, h, jsfeat.U8C1_t);
     //right drawing
     //makeFunctionNodes();
+
 }
 
 function jsfeatToP5(src, dst) {
@@ -216,4 +217,26 @@ function drawRightBuffer() {
     rightBuffer.line(nodesAxes[0][0]*fscale,nodesAxes[0][1]*fscale,nodesAxes[3][0]*fscale,nodesAxes[3][1]*fscale);
     rightBuffer.text("z",nodesAxes[3][0]*fscale,nodesAxes[3][1]*fscale);
 
+}
+
+function printToCSV(){
+    table = new p5.Table();
+
+    //set table header
+    table.addColumn('point');
+    table.addColumn('x');
+    table.addColumn('y');
+    table.addColumn('z');
+
+    //load all values in table
+    let tableRow = table.addRow();
+    for (let i = 0; i < nodes.length; i++){
+        tableRow.setString('point', i);
+        tableRow.setString('x', nodes[i][0]);
+        tableRow.setString('y', nodes[i][1]);
+        tableRow.setString('z', nodes[i][2]);
+        tableRow = table.addRow();
+    }
+
+    saveTable(table, 'tableOutput', 'csv'); //could also be downloaded as tsv or html
 }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92930a52-8802-4ec8-8a2c-8fb39bab261e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/3d_plot.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketch.js" afterDir="false" />
@@ -65,8 +64,8 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="Node.js.sketch.js" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="Node.js.sketch.js" />
     </list>
     <recent_temporary>
       <list>
@@ -97,6 +96,7 @@
       <workItem from="1638970960613" duration="1192000" />
       <workItem from="1638981936685" duration="7463000" />
       <workItem from="1639041328195" duration="24346000" />
+      <workItem from="1639132437512" duration="3680000" />
     </task>
     <servers />
   </component>
