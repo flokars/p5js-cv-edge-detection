@@ -26,6 +26,50 @@ function f(x,y)	{
     return (3*Math.sin(Math.sqrt(x*x+y*y)))/(Math.sqrt(x*x+y*y))+4;
 }
 
+function sortOnY() {
+    let sum = 1;
+    for (let i = 0; i < (coordinates.length); i++) {
+        for (let j = coordinates.length - 1; j > 0; j--) {
+            if (coordinates[i].y === coordinates[j].y && coordinates[i].score === undefined && coordinates[j].score === undefined) {
+                coordinates[i].scoreY = sum;
+                coordinates[j].scoreY = sum;
+                sum++;
+                break;
+            }
+        }
+        if (i < coordinates.length - 1) {
+            if (coordinates[i].y !== coordinates[i + 1].y) {
+                sum = 1;
+            }
+        }
+    }
+}
+
+function sortOnX(){
+    sortOnY();
+    let sum = 1;
+
+    coordinates.sort(function (a, b) {
+        return a.x - b.x;
+    })
+
+    for (let i = 0; i < (coordinates.length); i++){
+        for (let j = coordinates.length -1; j > 0; j--){
+            if (coordinates[i].x === coordinates[j].x && coordinates[i].scoreX === undefined && coordinates[j].scoreX === undefined){
+                coordinates[i].scoreX = sum;
+                coordinates[j].scoreX = sum;
+                sum++;
+                break;
+            }
+        }
+        if ( i < coordinates.length -1 ){
+            if (coordinates[i].x !== coordinates[i + 1].x){
+                sum = 1;
+            }
+        }
+    }
+}
+
 function functionNodesConstructor() {
     // filling the nodes array with function points [x,y,z] where z = f(x,y).
     this.nodes = new Array();

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92930a52-8802-4ec8-8a2c-8fb39bab261e" name="Default Changelist" comment="">
+    <list default="true" id="92930a52-8802-4ec8-8a2c-8fb39bab261e" name="Default Changelist" comment="sortOnY and sortOnX function added. Feels as if the two could be combined, but for now it works.&#10;&#10;Array is sorted on X coordinates in console log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/sketch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/old" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -97,11 +97,16 @@
       <workItem from="1638981936685" duration="7463000" />
       <workItem from="1639041328195" duration="24346000" />
       <workItem from="1639132437512" duration="3680000" />
+      <workItem from="1639305717431" duration="2919000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sortOnY and sortOnX function added. Feels as if the two could be combined, but for now it works.&#10;&#10;Array is sorted on X coordinates in console log" />
+    <option name="LAST_COMMIT_MESSAGE" value="sortOnY and sortOnX function added. Feels as if the two could be combined, but for now it works.&#10;&#10;Array is sorted on X coordinates in console log" />
   </component>
   <component name="WindowStateProjectService">
     <state x="572" y="199" key="#Web_Browsers" timestamp="1638971144181">

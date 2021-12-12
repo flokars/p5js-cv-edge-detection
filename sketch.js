@@ -180,6 +180,8 @@ function map3D(mapper){
 }
 
 function drawRightBuffer() {
+    sortOnX();
+    console.log(coordinates);
     makeFunctionNodes();
     //console.log(nodesAxes);
     let backgroundColour = color(0, 0, 0);
